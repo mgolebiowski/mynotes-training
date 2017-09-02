@@ -11,5 +11,8 @@
     "url": "mynotes-training"
   },
   "author": "mgol",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "material-design-lite": "^1.3.0"
+  }
 }
