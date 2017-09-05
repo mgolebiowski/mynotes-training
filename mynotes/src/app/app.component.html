@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-container>
+  <md-toolbar color="primary">
+      <button type="button" md-button (click)="sidenav.toggle()">
+              <md-icon class="menu-toggle" md-font-library="material-icons" aria-hidden="true">menu<span class="cdk-visually-hidden">Toggle menu</span></md-icon>
+      </button>
+      <span class="mdl-layout-title">Notatka 1</span>
+      <div class="mdl-layout-spacer"></div>
+  </md-toolbar>
+  <md-sidenav #sidenav mode="side">
+    <nav class="notes-list mdl-navigation mdl-color--blue-grey-800">
+      <a class="mdl-navigation__link mdl-navigation__link--current" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">note</i> Notatka 1</a>
+      <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">note</i> Notatka 2</a>
+      <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">note</i> Notatka 3</a>
+    </nav>
+  </md-sidenav>
+  <app-main></app-main>
+</md-sidenav-container>
